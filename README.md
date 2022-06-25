@@ -28,9 +28,9 @@ Below are our bash scripts to fit IWVAE and MCEM on high performance computing c
                     echo "Start IWVAE: Asymptotic: "$asymp", MIRT: "$pl", Depend: "$depend", Correlated Factors: "$corr_factor
                     python fit_iwvae_syn.py -asymptotic $asymp \
                                             -pl $pl \
-                                            -item_depend $depend \
-                                            -correlated_factor $corr_factor \
-                                            -replication_id $SLURM_ARRAY_TASK_ID
+                                            -item-depend $depend \
+                                            -correlated-factor $corr_factor \
+                                            -replication-id $SLURM_ARRAY_TASK_ID
                 done
             done 
         done
@@ -43,10 +43,10 @@ Below are our bash scripts to fit IWVAE and MCEM on high performance computing c
                 for corr_factor in 0 1; do 
                     echo "Start MCEM: Asymptotic: "$asymp", MIRT: "$pl", Depend: "$depend", Correlated Factors: "$corr_factor
                     Rscript --vanilla fit_mcem_syn.R $asymp \
-                                                    $pl \
-                                                    $depend \
-                                                    $corr_factor \
-                                                    $SLURM_ARRAY_TASK_ID
+                                                     $pl \
+                                                     $depend \
+                                                     $corr_factor \
+                                                     $SLURM_ARRAY_TASK_ID
                 done
             done 
         done
