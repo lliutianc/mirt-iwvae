@@ -6,5 +6,4 @@ matplotlib
 seaborn
 statsmodels
 factor_analyzer
-
 torch

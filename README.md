@@ -2,22 +2,14 @@
 
 Codes for reproducing synthetic experiments in [Estimating Three-and Four-parameter MIRT Models with Importance-weighted Sampling Enhanced Variational Autoencoder](https://www.frontiersin.org/articles/10.3389/fpsyg.2022.935419/abstract)
 
-### Get started
+### Prerequisites
 
-To install the package, run
-
-```
-$ git clone https://github.com/lliutianc/mirt-iwvae
-$ cd mirt-iwvae
-# It is recommended to create a virtual environment here
-$ pip install -e .
-$ pip install -r requirements.txt
-
-```
+Our experiments are based on PYTHON=3.8, 
+see `requirements.txt` for required packages. 
 
 ### Synthetic Experiments
 
-Below are our bash scripts to fit IWVAE and MCEM on high performance computing cluster. 
+Below are bash scripts to fit IWVAE and MCEM on high performance computing cluster. 
 
 ```
     # Fit IWVAE
