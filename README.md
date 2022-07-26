@@ -5,7 +5,7 @@ Codes for reproducing synthetic experiments in [Estimating Three-and Four-parame
 ### Prerequisites
 
 Our experiments are based on PYTHON=3.8, 
-see `requirements.txt` for required packages. 
+please see `requirements.txt` for required packages. 
 
 ### Synthetic Experiments
 
@@ -45,4 +45,5 @@ Below are bash scripts to fit IWVAE and MCEM on high performance computing clust
     done
 ```
 
-where `SLURM_ARRAY_TASK_ID` ranges from 1 to 100, indicates 100 independent replications. 
+Here `SLURM_ARRAY_TASK_ID` ranges from 1 to 100, 
+indicates 100 independent replications. 
