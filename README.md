@@ -47,3 +47,8 @@ Below are bash scripts to fit IWVAE and MCEM on high performance computing clust
 
 Here `SLURM_ARRAY_TASK_ID` ranges from 1 to 100, 
 indicates 100 independent replications. 
+
+
+### Results
+
+Estimated parameters are stored in `model` in `fit_iwvae_syn.py` and can be extracted by `model.a` to `model.d` respectively. 
